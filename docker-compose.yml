@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mininet:
+    build:
+      context: .
+      args:
+        user: iwaseyusuke
+    image: iwaseyusuke/mininet
+    tty: true
+    privileged: true
+    environment:
+     - DISPLAY
+    volumes:
+     - /tmp/.X11-unix:/tmp/.X11-unix
+     - /lib/modules:/lib/modules
