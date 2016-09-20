@@ -5,3 +5,4 @@ service openvswitch-switch start
 bash
 
 service openvswitch-switch stop
+modprobe -r openvswitch
