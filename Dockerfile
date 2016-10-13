@@ -8,7 +8,7 @@ ARG user=iwaseyusuke
 USER root
 WORKDIR /root
 
-COPY ENTRYPOINT.sh /root/
+COPY ENTRYPOINT.sh /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     xterm \
  && mv /usr/sbin/tcpdump /usr/bin/tcpdump \
  && rm -rf /var/lib/apt/lists/* \
- && chmod +x /root/ENTRYPOINT.sh
+ && chmod +x /ENTRYPOINT.sh
 
 EXPOSE 6640
 
-ENTRYPOINT ["/root/ENTRYPOINT.sh"]
+ENTRYPOINT ["/ENTRYPOINT.sh"]
