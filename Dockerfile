@@ -20,8 +20,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
     x11-xserver-utils \
     xterm \
- && mv /usr/sbin/tcpdump /usr/bin/tcpdump \
  && rm -rf /var/lib/apt/lists/* \
+ && mv /bin/ping /sbin/ping \
+ && mv /bin/ping6 /sbin/ping6 \
+ && mv /usr/sbin/tcpdump /usr/bin/tcpdump \
  && chmod +x /ENTRYPOINT.sh
 
 EXPOSE 6640
