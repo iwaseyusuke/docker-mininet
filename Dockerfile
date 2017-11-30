@@ -26,6 +26,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && mv /usr/sbin/tcpdump /usr/bin/tcpdump \
  && chmod +x /ENTRYPOINT.sh
 
-EXPOSE 6640
+EXPOSE 6633 6653 6640
 
 ENTRYPOINT ["/ENTRYPOINT.sh"]
