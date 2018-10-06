@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     mininet \
     net-tools \
     openvswitch-switch \
+    openvswitch-testcontroller \
     tcpdump \
     vim \
     x11-xserver-utils \
