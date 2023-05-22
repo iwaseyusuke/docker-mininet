@@ -79,8 +79,11 @@ If you have installed [Docker Compose](https://docs.docker.com/compose/),
 you can run container with:
 
 ```bash
-wget https://github.com/iwaseyusuke/docker-mininet/raw/master/docker-compose.yml
-docker-compose run --rm mininet
+# Download Compose file
+wget https://raw.githubusercontent.com/iwaseyusuke/docker-mininet/main/docker-compose.yml
+
+# Run a container
+docker compose run --rm mininet
 ```
 
 ## TIPS
