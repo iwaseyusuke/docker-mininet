@@ -3,7 +3,7 @@ services:
   mininet:
     build:
       context: .
-    image: iwaseyusuke/mininet:ubuntu-22.04  #latest
+    image: iwaseyusuke/mininet:ubuntu-20.04
     tty: true
     network_mode: "bridge"
     privileged: true
